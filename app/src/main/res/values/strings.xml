@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Stress Reliever</string>
+    <string name="StressFreeButton">Tap Me For A Stress Free Day!</string>
+    <string name="got_stress">GOT STRESS?</string>
+    <string name="need_advice">Need Advice?</string>
+    <string name="tap_me_for_some_life_changing_advice">Tap Me For Some Life Changing Advice!</string>
+    <string name="got_stress_description">Got Stress?</string>
+    <string name="select_advice">Select Advice</string>
+    <string name="switches_between_screens">switches between screens</string>
+    <string name="select">Select Advice</string>
+    <string name="switch_1">switch</string>
+
+    <string-array name="advice">
+        <item>Fun Fact</item>
+        <item>Random Advice</item>
+        <item>Life-changing Advice</item>
+        <item>Another Fun Fact</item>
+        <item>Did You Know?</item>
+        <item>Just One More Thing...</item>
+    </string-array>
+</resources>

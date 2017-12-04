@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:style="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/advice">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_sync_black_24dp"
+        android:id="@+id/btnSwitch"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/adviceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="#037cbe"
+        android:contentDescription="Advice!"
+        android:text="@string/tap_me_for_some_life_changing_advice"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/need_advice"
+        android:fontFamily="cursive"
+        android:text="@string/need_advice"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff9500"
+        android:textIsSelectable="false"
+        android:textSize="70sp"
+        android:typeface="serif" />
+
+    <Spinner
+        android:id="@+id/spinnerAdvice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_above="@+id/adviceButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/select_advice"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:layout_above="@+id/spinnerAdvice"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+
+</RelativeLayout>
