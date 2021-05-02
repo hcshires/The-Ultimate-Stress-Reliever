@@ -2,29 +2,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:style="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/advice">
+    android:background="@drawable/advice"
+    android:orientation="vertical"
+    style:actionBarNavMode="@android:drawable/arrow_down_float">
 
     <ImageButton
+        android:id="@+id/activityButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_sync_black_24dp"
-        android:id="@+id/btnSwitch"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/switches_between_screens"
+        app:srcCompat="@drawable/ic_sync_black_24dp" />
 
     <Button
         android:id="@+id/adviceButton"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSwitch"
+        android:layout_above="@+id/activityButton2"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
         android:background="#037cbe"
-        android:contentDescription="Advice!"
+        android:contentDescription="@string/advice"
         android:text="@string/tap_me_for_some_life_changing_advice"
         android:textColor="#ffffff" />
 
@@ -36,38 +40,37 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:contentDescription="@string/need_advice"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/segoepr"
         android:text="@string/need_advice"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ff9500"
         android:textIsSelectable="false"
-        android:textSize="70sp"
+        android:textSize="53sp"
         android:typeface="serif" />
 
     <Spinner
-        android:id="@+id/spinnerAdvice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
-        style="@android:style/Widget.Holo.Light.Spinner"
-        android:layout_above="@+id/adviceButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/adviceSpinner"
+        style="@android:style/Holo.Light.ButtonBar"
+        android:layout_width="320dp"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="175dp"
+        android:background="#96ffffff" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nothingSelected"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:text="@string/select_advice"
-        android:textColor="@android:color/background_light"
-        android:textSize="24sp"
-        android:layout_above="@+id/spinnerAdvice"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp" />
+        android:layout_above="@+id/adviceSpinner"
+        android:layout_alignEnd="@+id/activityButton2"
+        android:layout_alignRight="@+id/adviceSpinner"
+        android:contentDescription="@string/nothingSelected"
+        android:fontFamily="@font/segoepr"
+        android:text="@string/nothingSelected"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
 
 
 </RelativeLayout>

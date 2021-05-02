@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">Stress Reliever</string>
-    <string name="StressFreeButton">Tap Me For A Stress Free Day!</string>
-    <string name="got_stress">GOT STRESS?</string>
+    <string name="StressFreeButton">Relieve My Stress!</string>
+    <string name="got_stress">Got Stress?</string>
     <string name="need_advice">Need Advice?</string>
-    <string name="tap_me_for_some_life_changing_advice">Tap Me For Some Life Changing Advice!</string>
+    <string name="tap_me_for_some_life_changing_advice">Give Me Advice!</string>
     <string name="got_stress_description">Got Stress?</string>
     <string name="select_advice">Select Advice</string>
-    <string name="switches_between_screens">switches between screens</string>
+    <string name="switches_between_screens">Switches between screens</string>
     <string name="select">Select Advice</string>
-    <string name="switch_1">switch</string>
+    <string name="advice">Gives advice when pressed</string>
+    <string name="stress_free_day">Stress Free Day!</string>
+    <string name="nothingSelected">Please select an option</string>
+    <string name="todo">TODO</string>
 
-    <string-array name="advice">
+    <string-array name="adviceArray">
         <item>Fun Fact</item>
         <item>Random Advice</item>
         <item>Life-changing Advice</item>
